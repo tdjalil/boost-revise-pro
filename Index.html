@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appli Révisions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Appli de Révisions</h1>
+
+        <div class="fiche">
+            <h2 id="ficheTitle">Titre de la fiche</h2>
+            <p id="ficheContent">Contenu de la fiche...</p>
+        </div>
+
+        <div class="controls">
+            <button id="genFiche">Générer fiche</button>
+            <button id="prevFiche">Précédente</button>
+            <button id="nextFiche">Suivante</button>
+            <button id="saveFiches">Sauvegarder</button>
+        </div>
+
+        <div class="quiz">
+            <h3>Quiz</h3>
+            <p id="quizQuestion">Écris le contenu exact de la fiche :</p>
+            <input type="text" id="quizAnswer" placeholder="Ta réponse">
+            <button id="checkQuiz">Vérifier</button>
+        </div>
+
+        <div class="tableau">
+            <h3>Tableau des fiches</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Sujet</th>
+                        <th>Contenu</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
